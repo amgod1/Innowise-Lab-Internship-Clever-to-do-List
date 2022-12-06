@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/innowise-lab-internship-clever-to-do-list/static/css/main.2aa7f5ff.css",
+    "main.js": "/innowise-lab-internship-clever-to-do-list/static/js/main.31d8b93a.js",
+    "index.html": "/innowise-lab-internship-clever-to-do-list/index.html",
+    "main.2aa7f5ff.css.map": "/innowise-lab-internship-clever-to-do-list/static/css/main.2aa7f5ff.css.map",
+    "main.31d8b93a.js.map": "/innowise-lab-internship-clever-to-do-list/static/js/main.31d8b93a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2aa7f5ff.css",
+    "static/js/main.31d8b93a.js"
+  ]
+}
