@@ -19,7 +19,7 @@ const TodoItem = (props) => {
   return (
     <>
       <UpdateModal handleClose={handleClose} show={show} id={props.id} />
-      <ListGroup className="mt-4 mb-3">
+      <ListGroup className="mt-4 pb-3">
         <ListGroup.Item variant={props.done ? 'success' : 'danger'}>
           <h4>
             {props.done

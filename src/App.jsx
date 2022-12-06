@@ -8,7 +8,7 @@ const App = () => {
   const { user } = useLogin()
   const { setBackgroundColor } = useTheme()
   return (
-    <div className={setBackgroundColor()} style={{ height: '100vh' }}>
+    <div className={setBackgroundColor()} id="app">
       <Header />
       {!user
         ? <LogIn />
