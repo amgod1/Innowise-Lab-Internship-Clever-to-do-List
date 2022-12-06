@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Innowise-Lab-Internship-Clever-to-do-List/static/css/main.2aa7f5ff.css",
-    "main.js": "/Innowise-Lab-Internship-Clever-to-do-List/static/js/main.2b9f197d.js",
+    "main.css": "/Innowise-Lab-Internship-Clever-to-do-List/static/css/main.149bf8ec.css",
+    "main.js": "/Innowise-Lab-Internship-Clever-to-do-List/static/js/main.6ed6b47d.js",
     "index.html": "/Innowise-Lab-Internship-Clever-to-do-List/index.html",
-    "main.2aa7f5ff.css.map": "/Innowise-Lab-Internship-Clever-to-do-List/static/css/main.2aa7f5ff.css.map",
-    "main.2b9f197d.js.map": "/Innowise-Lab-Internship-Clever-to-do-List/static/js/main.2b9f197d.js.map"
+    "main.149bf8ec.css.map": "/Innowise-Lab-Internship-Clever-to-do-List/static/css/main.149bf8ec.css.map",
+    "main.6ed6b47d.js.map": "/Innowise-Lab-Internship-Clever-to-do-List/static/js/main.6ed6b47d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aa7f5ff.css",
-    "static/js/main.2b9f197d.js"
+    "static/css/main.149bf8ec.css",
+    "static/js/main.6ed6b47d.js"
   ]
 }
