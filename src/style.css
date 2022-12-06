@@ -1,6 +1,6 @@
 *::-webkit-scrollbar {
 	width: 8px;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 *::-webkit-scrollbar-track {
@@ -9,6 +9,5 @@
 
 *::-webkit-scrollbar-thumb {
 	background-color: #0d6efd;
-	border-radius: 3px;
 	border: 1px none #ffffff;
 }

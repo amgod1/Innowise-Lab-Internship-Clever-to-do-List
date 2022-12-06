@@ -1,11 +1,8 @@
-import React from 'react'
-const TodoAmount = (props) => {
-  return (
-    <div 
-      style={{width: '15px', height: '15px'}} 
-      className={`${props.done ? 'bg-success': 'bg-danger'} rounded-circle mt-2`}
-    ></div>
-  )
-}
+const TodoAmount = (props) => (
+  <div
+    style={{ width: '10px', height: '10px' }}
+    className={`${props.done ? 'bg-success' : 'bg-danger'} rounded-circle mt-2`}
+  />
+)
 
 export default TodoAmount

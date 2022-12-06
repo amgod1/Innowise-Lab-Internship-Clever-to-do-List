@@ -13,33 +13,43 @@ export function LoginProvider({ children }) {
   const [passwordIn, setPasswordIn] = useState('')
   const [mailReg, setMailReg] = useState('')
   const [passwordReg, setPasswordReg] = useState('')
-  const [user, setUser] = useState((!!localStorage.user) ? localStorage.user : '')
+  const [show, setShow] = useState(false)
+  const [text, setText] = useState('')
+  const [user, setUser] = useState((localStorage.user) ? localStorage.user : '')
 
   const createUser = async () => {
     try {
       const currentUser = await createUserWithEmailAndPassword(auth, mailReg, passwordReg)
-      if (!!auth) {
+      if (auth) {
         setUser(currentUser.user.email)
         localStorage.setItem('user', currentUser.user.email)
       }
       setMailReg('')
       setPasswordReg('')
     } catch (err) {
-      alert(err.message)
+      setText(err.message)
+      setShow(true)
     }
   }
 
   const onCreateAccount = () => {
-    if (mailReg === '' || mailReg === ' ') {alert(`Mail can't be empty`)} 
-    else if (mailReg.length < 5) {alert(`Mail is too short`)} 
-    else if (mailReg.length > 30) {alert(`Mail is too long`)} 
-    else if (!mailReg.includes('@')) {alert(`Invalid mail (missing @)`)} 
-    else if (!mailReg.includes('.com') && !mailReg.includes('.by') && !mailReg.includes('.ru')) {alert(`Invalid domain zone (missing .com/.ru/.by)`)} 
-    else if (passwordReg === '' || passwordReg === ' ') {alert(`Password can't be empty`)}
-    else if (passwordReg.length < 5) {alert(`Password is too short`)} 
-    else if (passwordReg.length > 30) {alert(`Password is too long`)}
-    else if (mailReg === passwordReg) {alert('Password cannot be the same as the mail')} 
-    else {
+    if (mailReg === '' || mailReg === ' ') {
+      setText('Mail can\'t be empty'); setShow(true)
+    } else if (mailReg.length < 5) {
+      setText('Mail is too short'); setShow(true)
+    } else if (mailReg.length > 30) {
+      setText('Mail is too long'); setShow(true)
+    } else if (!mailReg.includes('@')) {
+      setText('Invalid mail (missing @)'); setShow(true)
+    } else if (passwordReg === '' || passwordReg === ' ') {
+      setText('Password can\'t be empty'); setShow(true)
+    } else if (passwordReg.length < 5) {
+      setText('Password is too short'); setShow(true)
+    } else if (passwordReg.length > 30) {
+      setText('Password is too long'); setShow(true)
+    } else if (mailReg === passwordReg) {
+      setText('Password cannot be the same as the mail'); setShow(true)
+    } else {
       createUser()
     }
   }
@@ -49,17 +59,19 @@ export function LoginProvider({ children }) {
       const currentUser = await signInWithEmailAndPassword(auth, mailIn, passwordIn)
       setUser(currentUser.user.email)
       localStorage.setItem('user', currentUser.user.email)
-      
       setMailIn('')
       setPasswordIn('')
     } catch (err) {
-      alert(err.message)
+      setText(err.message)
+      setShow(true)
     }
   }
 
   const onLogOut = async () => {
     await signOut(auth)
     setUser('')
+    setText('')
+    setShow('')
     localStorage.removeItem('user')
   }
 
@@ -78,6 +90,8 @@ export function LoginProvider({ children }) {
         setPasswordReg,
         onCreateAccount,
 
+        show,
+        text,
         user,
         setUser,
         onLogOut,

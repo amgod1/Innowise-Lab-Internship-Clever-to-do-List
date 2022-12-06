@@ -1,16 +1,15 @@
-import { initializeApp } from "firebase/app"
-import { getDatabase } from "firebase/database"
+import { initializeApp } from 'firebase/app'
+import { getDatabase } from 'firebase/database'
 import { getAuth } from 'firebase/auth'
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyC8d9yvcEkgapakbshE2ctuEMaE8-WUxXc",
-  authDomain: "clever-todo-list-61938.firebaseapp.com",
-  projectId: "clever-todo-list-61938",
-  storageBucket: "clever-todo-list-61938.appspot.com",
-  messagingSenderId: "317088604316",
-  appId: "1:317088604316:web:f0df8d5f6b57a523388d59",
-  measurementId: "G-R7BLR7MBPV"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 }
 
 const app = initializeApp(firebaseConfig)
