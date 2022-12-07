@@ -7,18 +7,18 @@
 ## How to run the app:
 
 - For storing variables and some other data, there were created the **_login, tudu_** and **_theme contexts_** in separate files.
-- The **_theme_** is changed through the theme context. **_Dark_** and **light_** themes are available.
+- The **_theme_** is changed through the theme context. **_Dark_** and **light\_** themes are available.
 
 ##### Login Component:
 
-- When you first enter the site, you have the option of creating an account or logging into an existing account. (only the Login component is rendered)
-- If the login or password is invalid, toast appears on the screen with an error message.
-- When a user registers successfully, he is automatically logged in and his data is saved. The same happens when logging into an existing account.
-- After a successful login, the todo component is rendered instead of the login.
+- When you first enter the site, you have the option of **_creating_** an account or **_logging_** into an existing account. (only the Login component is rendered)
+- If the login or password is invalid, **_toast_** appears on the screen **_with an error message_**.
+- When a user registers **_successfully_**, he is **_automatically logged in_** and his data is saved. The same happens when **_logging into_** an existing account.
+- After a **_successful_** login, **_the todo component_** is rendered instead of the login.
 
 ##### To-do Component:
 
-- When we draw the component, we get thirty buttons, each of which allows us to choose a day to create a note (or to-do). 
+- When we draw the component, we get thirty buttons, each of which allows us to choose a day to create a note (or to-do).
 - The first button always shows today's date.
 - Infinite scrolling for creating notes for future months is implemented.
 - After rendering a component, only ONE request is made to the database, to retrieve notes from an authorized user.
@@ -26,9 +26,10 @@
 - The number of circles is the number of notes.
 - Unfinished tasks are highlighted in red, and completed tasks are highlighted in green. in the opposite case, nothing is drawn additionally.
 - You can create a note after selecting a specific date, entering a title and description, and then pressing the create button.
-- Once created, the note is automatically rendered and the user has the following options for further interaction with the item: mark it as done/not done, change the title or description, and delete it. 
+- Once created, the note is automatically rendered and the user has the following options for further interaction with the item: mark it as done/not done, change the title or description, and delete it.
 
 ## Database snapshot:
+
 - Firebase Authenticition was used for registration
 - Firebase Realtime Database was used to store the to-do notes.
 
@@ -37,21 +38,21 @@
 ├── users  
  l      ├── userLogin1  
  l       l      ├── todo-[todo-id1]  
- l       l       l      ├──  date: "Dec-31-2022"  
- l       l       l      ├──  done: "False"  
- l       l       l      ├──  id: todo-[todo-id1]  
- l       l       l      ├──  title: "buy presents"  
- l       l       l      ├──  info: "i am always forgot to buy some presents"  
+ l       l       l      ├── date: "Dec-31-2022"  
+ l       l       l      ├── done: "False"  
+ l       l       l      ├── id: todo-[todo-id1]  
+ l       l       l      ├── title: "buy presents"  
+ l       l       l      ├── info: "i am always forgot to buy some presents"  
  l       l      ├── todo-[todo-id2]  
  l      ├── userLogin2  
-└── ...  
+└── ...
 
 ## Application stack:
 
 # Folder structure:
 
 ├── ...  
-├── dist  (production build)  
+├── dist (production build)  
 ├── node_modules (all downloaded packages)  
 ├── public (html & others)  
 ├── src (source files)  
@@ -66,7 +67,7 @@
  l      ├── App.jsx  
  l      ├── index.js  
  l      ├── firebase.config.js (config for db connection + uses .env variables)  
- l      └──  style.css (contains styles for scrollbar and app heigth)  
-└── .env (contains db api and other secret values)  
+ l      └── style.css (contains styles for scrollbar and app heigth)  
+└── .env (contains db api and other secret values)
 
 Created by [Kamill](https://github.com/amgod1)
