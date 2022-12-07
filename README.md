@@ -6,8 +6,8 @@
 
 ## How to run the app:
 
-- For storing variables and some other data, there were created the login, tudu and theme contexts in separate files.
-- The theme is changed through the theme context. Dark and light themes are available.
+- For storing variables and some other data, there were created the **login, tudu** and **theme contexts** in separate files.
+- The **theme** is changed through the theme context. **Dark** and **light** themes are available.
 
 ##### Login Component:
 
