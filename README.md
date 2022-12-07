@@ -54,7 +54,7 @@
 - React-Bootstrap/Bootstrap (used for **_fast layout_**)
 - Dotenv (used for **_storing secret data_**)
 
-The **react-router-dom** library **was not used**, as there was no need in routing (the **_priority_** was on the **_user-friendly interface_**).
+The **react-router-dom** library **was not used**, as there was no need in routing (the **_priority_** was on the **_user-friendly interface_**). If the user is **_logged in_** - the **_Todo_** component is displayed there, **_otherwise_** - **_login_**
 
 # Folder structure:
 
