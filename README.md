@@ -38,11 +38,11 @@
 ├── **users**  
  l      ├── userLogin1  
  l       l      ├── **todo-[todo-id1]**  
- l       l       l      ├── date: __"Dec-31-2022"__  
- l       l       l      ├── done: __"False"__  
- l       l       l      ├── id: __todo-[todo-id1]__  
- l       l       l      ├── title: __"buy presents"__  
- l       l       l      ├── info: __"i am always forgot to buy some presents"__  
+ l       l       l      ├── date: **_"Dec-31-2022"_**  
+ l       l       l      ├── done: **_"False"_**  
+ l       l       l      ├── id: **_todo-[todo-id1]_**  
+ l       l       l      ├── title: **_"buy presents"_**  
+ l       l       l      ├── info: **_"i am always forgot to buy some presents"_**  
  l       l      ├── **todo-[todo-id2]**  
  l      ├── userLogin2  
 └── ...
@@ -52,22 +52,22 @@
 # Folder structure:
 
 ├── ...  
-├── dist (production build)  
-├── node_modules (all downloaded packages)  
-├── public (html & others)  
-├── src (source files)  
+├── dist **_(production build)_**  
+├── node_modules **_(all downloaded packages)_**  
+├── public ***(html & others)***  
+├── src ***(source files)***  
  l      ├── components  
- l       l      ├── Header (few jsx components for Header)  
- l       l      ├── Login (few jsx components for Login)  
- l       l      └── Todo (few jsx components for Todo)  
- l      └── context (store data, functions and variables for certain components)  
+ l       l      ├── Header ***(few jsx components for Header)***  
+ l       l      ├── Login ***(few jsx components for Login)***  
+ l       l      └── Todo ***(few jsx components for Todo)***  
+ l      └── context ***(store data, functions and variables for certain components)***  
  l       l      ├── LoginContext.jsx  
  l       l      ├── ThemeContext.jsx  
  l       l      └── TodoContext.jsx  
  l      ├── App.jsx  
  l      ├── index.js  
- l      ├── firebase.config.js (config for db connection + uses .env variables)  
- l      └── style.css (contains styles for scrollbar and app heigth)  
-└── .env (contains db api and other secret values)
+ l      ├── firebase.config.js ***(config for db connection + uses .env variables)***  
+ l      └── style.css ***(contains styles for scrollbar and app heigth)***  
+└── .env ***(contains db api and other secret values)***
 
 Created by [Kamill](https://github.com/amgod1)
