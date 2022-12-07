@@ -55,7 +55,7 @@
 
 ├── ...  
 ├── dist **_(production build)_**  
-├── node*modules \*\**(all downloaded packages)_**  
+├── node_modules ***(all downloaded packages)***  
 ├── public **_(html & others)_**  
 ├── src **_(source files)_**  
  l      ├── components  
@@ -68,8 +68,8 @@
  l       l      └── TodoContext.jsx  
  l      ├── App.jsx  
  l      ├── index.js  
- l      ├── firebase.config.js **_(config for db connection + uses .env variables)_**  
- l      └── style.css **_(contains styles for scrollbar and app heigth)_**  
-└── .env **_(contains db api and other secret values)_**
+ l      ├── firebase.config.js ***(config for db connection + uses .env variables)***  
+ l      └── style.css ***(contains styles for scrollbar and app heigth)***  
+└── .env ***(contains db api and other secret values)***
 
 Created by [Kamill](https://github.com/amgod1)
