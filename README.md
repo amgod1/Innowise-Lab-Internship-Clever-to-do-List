@@ -35,15 +35,15 @@
 
 ##### Database structure:
 
-├── users  
+├── **users**  
  l      ├── userLogin1  
- l       l      ├── todo-[todo-id1]  
- l       l       l      ├── date: "Dec-31-2022"  
- l       l       l      ├── done: "False"  
- l       l       l      ├── id: todo-[todo-id1]  
- l       l       l      ├── title: "buy presents"  
- l       l       l      ├── info: "i am always forgot to buy some presents"  
- l       l      ├── todo-[todo-id2]  
+ l       l      ├── **todo-[todo-id1]**  
+ l       l       l      ├── date: __"Dec-31-2022"__  
+ l       l       l      ├── done: __"False"__  
+ l       l       l      ├── id: __todo-[todo-id1]__  
+ l       l       l      ├── title: __"buy presents"__  
+ l       l       l      ├── info: __"i am always forgot to buy some presents"__  
+ l       l      ├── **todo-[todo-id2]**  
  l      ├── userLogin2  
 └── ...
 
