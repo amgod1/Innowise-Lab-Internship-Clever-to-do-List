@@ -6,9 +6,6 @@
 
 ## How to run the app:
 
-- For storing variables and some other data, there were created the **_login, tudu_** and **_theme contexts_** in separate files.
-- The **_theme_** is changed through the theme context. **_Dark_** and **light\_** themes are available.
-
 ##### Login Component:
 
 - When you first enter the site, you have the option of **_creating_** an account or **_logging_** into an existing account. (only the Login component is rendered)
@@ -27,6 +24,11 @@
 - **_Unfinished_** tasks are highlighted in **_red_**, and **_completed_** tasks are highlighted in **_green_**. In the opposite case, nothing is drawn additionally.
 - You can **_create_** a note after **_selecting_** a specific date, **_entering_** a title and description, and then **_pressing_** the create button.
 - Once created, the note is **_automatically rendered_** and the user has the following options for further interaction with the item: **_mark it as done/not done_**, **_change the title or description_**, and **_delete_** it.
+
+##### Notes:
+
+- For storing variables and some other data, there were created the **_login, todo_** and **_theme contexts_** in separate files.
+- The **_theme_** is changed through the theme context. **_Dark_** and **light\_** themes are available.
 
 ## Database snapshot:
 
@@ -53,7 +55,7 @@
 
 ├── ...  
 ├── dist **_(production build)_**  
-├── node_modules **_(all downloaded packages)_**  
+├── node*modules \*\**(all downloaded packages)_**  
 ├── public **_(html & others)_**  
 ├── src **_(source files)_**  
  l      ├── components  
@@ -67,7 +69,7 @@
  l      ├── App.jsx  
  l      ├── index.js  
  l      ├── firebase.config.js **_(config for db connection + uses .env variables)_**  
- l      └── style.css **_(contains styles for scrollbar and app heigth)_**  
-└── .env ***(contains db api and other secret values)***
+ l      └── style.css **_(contains styles for scrollbar and app heigth)\_**  
+└── .env \***(contains db api and other secret values)\*\*\*
 
 Created by [Kamill](https://github.com/amgod1)
