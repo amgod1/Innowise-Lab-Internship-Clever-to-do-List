@@ -18,20 +18,20 @@
 
 ##### To-do Component:
 
-- When we draw the component, we get thirty buttons, each of which allows us to choose a day to create a note (or to-do).
-- The first button always shows today's date.
-- Infinite scrolling for creating notes for future months is implemented.
-- After rendering a component, only ONE request is made to the database, to retrieve notes from an authorized user.
-- If the user has already created notes, the application draws mini-circles under the specific date.
-- The number of circles is the number of notes.
-- Unfinished tasks are highlighted in red, and completed tasks are highlighted in green. in the opposite case, nothing is drawn additionally.
-- You can create a note after selecting a specific date, entering a title and description, and then pressing the create button.
-- Once created, the note is automatically rendered and the user has the following options for further interaction with the item: mark it as done/not done, change the title or description, and delete it.
+- When we render the component, we get **_thirty buttons_**, each of which allows us to **_choose a day_** to create a note (or to-do).
+- The first button always shows **_today's date_**.
+- **_Infinite scrolling_** for creating notes for future months **_is implemented_**.
+- After rendering a component, **_only ONE request_** is made to the database, to retrieve notes from an authorized user.
+- If the user **_has already created_** notes, the application **_draws mini-circles_** under the specific date.
+- The **_number of circles_** is the number of notes.
+- **_Unfinished_** tasks are highlighted in **_red_**, and **_completed_** tasks are highlighted in **_green_**. In the opposite case, nothing is drawn additionally.
+- You can **_create_** a note after **_selecting_** a specific date, **_entering_** a title and description, and then **_pressing_** the create button.
+- Once created, the note is **_automatically rendered_** and the user has the following options for further interaction with the item: **_mark it as done/not done_**, **_change the title or description_**, and **_delete_** it.
 
 ## Database snapshot:
 
-- Firebase Authenticition was used for registration
-- Firebase Realtime Database was used to store the to-do notes.
+- **_Firebase Authenticition_** was used for registration
+- **_Firebase Realtime Database_** was used to store the to-do notes.
 
 ##### Database structure:
 
