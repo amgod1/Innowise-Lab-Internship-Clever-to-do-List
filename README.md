@@ -69,7 +69,7 @@
  l      ├── App.jsx  
  l      ├── index.js  
  l      ├── firebase.config.js **_(config for db connection + uses .env variables)_**  
- l      └── style.css **_(contains styles for scrollbar and app heigth)\_**  
-└── .env \***(contains db api and other secret values)\*\*\*
+ l      └── style.css **_(contains styles for scrollbar and app heigth)_**  
+└── .env **_(contains db api and other secret values)_**
 
 Created by [Kamill](https://github.com/amgod1)
