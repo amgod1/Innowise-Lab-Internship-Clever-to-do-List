@@ -29,6 +29,7 @@
 
 - For storing variables and some other data, there were created the **_login, todo_** and **_theme contexts_** in separate files.
 - The **_theme_** is changed through the theme context. **_Dark_** and **light\_** themes are available.
+- 
 
 ## Database snapshot:
 
@@ -50,6 +51,10 @@
 └── ...
 
 ## Application stack:
+- Firebase (used for **_authentication and storing data_**)
+- React-Bootstrap/Bootstrap (used for **_fast layout_**)
+- Dotenv (used for **_storing secret data_**)
+The **react-router-dom** library **was not used**, as there was no need in routing (the **_priority_** was on the **_user-friendly interface_**).
 
 # Folder structure:
 
