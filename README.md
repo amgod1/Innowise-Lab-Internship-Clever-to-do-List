@@ -54,20 +54,20 @@
 ├── ...  
 ├── dist **_(production build)_**  
 ├── node_modules **_(all downloaded packages)_**  
-├── public ***(html & others)***  
-├── src ***(source files)***  
+├── public **_(html & others)_**  
+├── src **_(source files)_**  
  l      ├── components  
- l       l      ├── Header ***(few jsx components for Header)***  
- l       l      ├── Login ***(few jsx components for Login)***  
- l       l      └── Todo ***(few jsx components for Todo)***  
- l      └── context ***(store data, functions and variables for certain components)***  
+ l       l      ├── Header **_(contains child jsx components for Header)_**  
+ l       l      ├── Login **_(contains child jsx components for Login)_**  
+ l       l      └── Todo **_(contains child jsx components for Todo)_**  
+ l      └── context **_(store data, functions and variables for certain components)_**  
  l       l      ├── LoginContext.jsx  
  l       l      ├── ThemeContext.jsx  
  l       l      └── TodoContext.jsx  
  l      ├── App.jsx  
  l      ├── index.js  
- l      ├── firebase.config.js ***(config for db connection + uses .env variables)***  
- l      └── style.css ***(contains styles for scrollbar and app heigth)***  
+ l      ├── firebase.config.js **_(config for db connection + uses .env variables)_**  
+ l      └── style.css **_(contains styles for scrollbar and app heigth)_**  
 └── .env ***(contains db api and other secret values)***
 
 Created by [Kamill](https://github.com/amgod1)
