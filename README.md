@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Innowise Lab Internship Clever to-do List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### [App Deploy](https://amgod1.github.io/Innowise-Lab-Internship-Clever-to-do-List/)
 
-## Available Scripts
+#### [Task Link](https://drive.google.com/file/d/1r3jTVTyrosejvIxiuAnTM7U0XvD8vuCE/view?usp=share_link)
 
-In the project directory, you can run:
+## How to run the app:
 
-### `npm start`
+- For storing variables and some other data, there were created the login, tudu and theme contexts in separate files.
+- The theme is changed through the theme context. Dark and light themes are available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##### Login Component:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- When you first enter the site, you have the option of creating an account or logging into an existing account. (only the Login component is rendered)
+- If the login or password is invalid, toast appears on the screen with an error message.
+- When a user registers successfully, he is automatically logged in and his data is saved. The same happens when logging into an existing account.
+- After a successful login, the todo component is rendered instead of the login.
 
-### `npm test`
+##### To-do Component:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- When we draw the component, we get thirty buttons, each of which allows us to choose a day to create a note (or to-do). 
+- The first button always shows today's date.
+- Infinite scrolling for creating notes for future months is implemented.
+- After rendering a component, only ONE request is made to the database, to retrieve notes from an authorized user.
+- If the user has already created notes, the application draws mini-circles under the specific date.
+- The number of circles is the number of notes.
+- Unfinished tasks are highlighted in red, and completed tasks are highlighted in green. in the opposite case, nothing is drawn additionally.
+- You can create a note after selecting a specific date, entering a title and description, and then pressing the create button.
+- Once created, the note is automatically rendered and the user has the following options for further interaction with the item: mark it as done/not done, change the title or description, and delete it. 
 
-### `npm run build`
+## Database snapshot:
+- Firebase Authenticition was used for registration
+- Firebase Realtime Database was used to store the to-do notes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Database structure:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── users
+ l      ├── userLogin1
+ l       l      ├── todo-[todo-id1]
+ l       l       l      ├──  date: "Dec-31-2022"
+ l       l       l      ├──  done: "False"
+ l       l       l      ├──  id: todo-[todo-id1]
+ l       l       l      ├──  title: "buy presents"
+ l       l       l      ├──  info: "i am always forgot to buy some presents"
+ l       l      ├── todo-[todo-id2]
+ l      ├── userLogin2
+└── ...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Application stack:
 
-### `npm run eject`
+# Folder structure:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+├── ...  
+├── dist  (production build)
+├── node_modules (all downloaded packages)  
+├── public (html & others)
+├── src (source files)  
+ l      ├── components
+ l       l      ├── Header (few jsx components for Header)
+ l       l      ├── Login (few jsx components for Login)
+ l       l      └── Todo (few jsx components for Todo)
+ l      └── context (store data, functions and variables for certain components)
+ l       l      ├── LoginContext.jsx
+ l       l      ├── ThemeContext.jsx
+ l       l      └── TodoContext.jsx
+ l      ├── App.jsx
+ l      ├── index.js
+ l      ├── firebase.config.js (config for db connection + uses .env variables)
+ l      └──  style.css (contains styles for scrollbar and app heigth)
+└── .env (contains db api and other secret values)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by [Kamill](https://github.com/amgod1)
