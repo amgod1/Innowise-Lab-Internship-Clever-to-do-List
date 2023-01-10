@@ -1,7 +1,6 @@
 import { Container, Alert } from 'react-bootstrap'
 import { useLogin } from '../../context/LoginContext'
-import LogInPanel from './LogInPanel'
-import CreateAccountPanel from './CreateAccountPanel'
+import InputPanel from './InputPanel'
 
 const LogIn = () => {
   const { text, show } = useLogin()
@@ -14,8 +13,9 @@ const LogIn = () => {
         </Alert>
         )}
       <Container className="d-flex justify-content-around flex-column flex-md-row">
-        <LogInPanel />
-        <CreateAccountPanel />
+        <InputPanel inputType="login" />
+        <InputPanel inputType="create" />
+
       </Container>
     </Container>
   )

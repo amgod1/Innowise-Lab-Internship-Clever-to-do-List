@@ -1,7 +1,7 @@
-const TodoAmount = (props) => (
+const TodoAmount = ({ done }) => (
   <div
     style={{ width: '10px', height: '10px' }}
-    className={`${props.done ? 'bg-success' : 'bg-danger'} rounded-circle mt-2`}
+    className={`${done ? 'bg-success' : 'bg-danger'} rounded-circle mt-2`}
   />
 )
 

@@ -1,14 +1,15 @@
 import { Row, Form } from 'react-bootstrap'
 
-const FormControl = (props) => (
+const FormControl = ({
+  type, placeholder, value, onChange,
+}) => (
   <Row>
     <Form.Control
       className="my-2"
-      id={props.id}
-      type={props.type}
-      placeholder={props.placeholder}
-      value={props.value}
-      onChange={props.onChange}
+      type={type}
+      placeholder={placeholder}
+      value={value}
+      onChange={onChange}
       maxLength={30}
     />
   </Row>

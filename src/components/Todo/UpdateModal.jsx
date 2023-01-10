@@ -4,7 +4,7 @@ import {
 import { useTheme } from '../../context/ThemeContext'
 import { useTodo } from '../../context/TodoContext'
 
-const UpdateModal = (props) => {
+const UpdateModal = ({ id, show, handleClose }) => {
   const { setTextColor, setBackgroundColor } = useTheme()
   const {
     updatedTitle,
@@ -15,12 +15,12 @@ const UpdateModal = (props) => {
   } = useTodo()
 
   const onUpdateTitleAndInfo = () => {
-    updateTitleAndInfo(props.id)
-    props.handleClose()
+    updateTitleAndInfo(id)
+    handleClose()
   }
 
   return (
-    <Modal show={props.show} onHide={props.handleClose} centered>
+    <Modal show={show} onHide={handleClose} centered>
       <Modal.Header className={`${setBackgroundColor()} ${setTextColor()}`} closeButton>
         <Modal.Title>Update Menu:</Modal.Title>
       </Modal.Header>
@@ -44,7 +44,7 @@ const UpdateModal = (props) => {
         </InputGroup>
       </Modal.Body>
       <Modal.Footer className={setBackgroundColor()}>
-        <Button variant="secondary" onClick={props.handleClose}>
+        <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
         <Button variant="primary" onClick={onUpdateTitleAndInfo}>
